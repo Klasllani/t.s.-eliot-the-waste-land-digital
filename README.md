@@ -9,4 +9,4 @@ Obvious work in progress. Plan is for
 - XSL transformation of the TEI?
 - Incorporate Apache Lucene Java library for retrieval queries // text analysis
 - Jupyter notebook for quality of life?
-- Expansion to other 
+- Expand project to include other works in the corpus (e.g. *Four Quartets*)
