@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<poem>
+    <metadata>
+        <title>The Waste Land</title>
+        <author>T.S. Eliot</author>
+        <publication_date>1922</publication_date>
+    </metadata>
+    <section id="1">
+        <title>The Burial of the Dead</title>
+        <stanza>
+            <line>April is the cruellest month, breeding</line>
+            <line>Lilacs out of the dead land, mixing</line>
+            <line>Memory and desire, stirring</line>
+            <line>Dull roots with spring rain.</line>
+            <line>Winter kept us warm, covering</line>
+            <line>Earth in forgetful snow, feeding</line>
+            <line>A little life with dried tubers.</line>
+            <line>Summer surprised us, coming over the Starnbergersee</line>
+            <line>With a shower of rain; we stopped in the colonnade,</line>
+            <line>And went on in sunlight, into the Hofgarten,</line>
+            <line>And drank coffee, and talked for an hour.</line>
+            <line>Bin gar keine Russin, stamm’ aus Litauen, echt deutsch.</line>
+            <line>And when we were children, staying at the archduke’s,</line>
+            <line>My cousin’s, he took me out on a sled,</line>
+            <line>And I was frightened. He said, Marie,</line>
+            <line>Marie, hold on tight. And down we went.</line>
+            <line>In the mountains, there you feel free.</line>
+            <line>I read, much of the night, and go south in the winter.</line>
+        </stanza>
+        <stanza>
+            <line>What are the roots that clutch, what branches grow</line>
+            <line>Out of this stony rubbish? Son of man,</line>
+            <line>You cannot say, or guess, for you know only</line>
+            <line>A heap of broken images, where the sun beats,</line>
+            <line>And the dead tree gives no shelter, the cricket no relief,</line>
+            <line>And the dry stone no sound of water. Only</line>
+            <line>There is shadow under this red rock,</line>
+            <line>(Come in under the shadow of this red rock),</line>
+            <line>And I will show you something different from either</line>
+            <line>Your shadow at morning striding behind you</line>
+            <line>Or your shadow at evening rising to meet you;</line>
+            <line>I will show you fear in a handful of dust.</line>
+            <line>Frisch weht der Wind</line>
+            <line>Der Heimat zu</line>
+            <line>Mein Irisch Kind,</line>
+            <line>Wo weilest du?</line>
+            <line>‘You gave me hyacinths first a year ago;</line>
+            <line>‘They called me the hyacinth girl.’</line>
+            <line>—Yet when we came back, late, from the Hyacinth garden,</line>
+            <line>Your arms full, and your hair wet, I could not</line>
+            <line>Speak, and my eyes failed, I was neither</line>
+            <line>Living nor dead, and I knew nothing,</line>
+            <line>Looking into the heart of light, the silence.</line>
+            <line>Oed’ und leer das Meer.</line>
+        </stanza>
+        <stanza>
+            <line>Madame Sosostris, famous clairvoyante,</line>
+            <line>Had a bad cold, nevertheless</line>
+            <line>Is known to be the wisest woman in Europe,</line>
+            <line>With a wicked pack of cards. Here, said she,</line>
+            <line>Is your card, the drowned Phoenician Sailor,</line>
+            <line>(Those are pearls that were his eyes. Look!)</line>
+            <line>Here is Belladonna, the Lady of the Rocks,</line>
+            <line>The lady of situations.</line>
+            <line>Here is the man with three staves, and here the Wheel,</line>
+            <line>And here is the one-eyed merchant, and this card,</line>
+            <line>Which is blank, is something he carries on his back,</line>
+            <line>Which I am forbidden to see. I do not find</line>
+            <line>The Hanged Man. Fear death by water.</line>
+            <line>I see crowds of people, walking round in a ring.</line>
+            <line>Thank you. If you see dear Mrs. Equitone,</line>
+            <line>Tell her I bring the horoscope myself:</line>
+            <line>One must be so careful these days.</line>
+        </stanza>
+        <stanza>
+            <line>Unreal City,</line>
+            <line>Under the brown fog of a winter dawn,</line>
+            <line>A crowd flowed over London Bridge, so many,</line>
+            <line>I had not thought death had undone so many.</line>
+            <line>Sighs, short and infrequent, were exhaled,</line>
+            <line>And each man fixed his eyes before his feet.</line>
+            <line>Flowed up the hill and down King William Street,</line>
+            <line>To where Saint Mary Woolnoth kept the hours</line>
+            <line>With a dead sound on the final stroke of nine.</line>
+            <line>There I saw one I knew, and stopped him, crying: ‘Stetson!</line>
+            <line>‘You who were with me in the ships at Mylae!</line>
+            <line>‘That corpse you planted last year in your garden,</line>
+            <line>‘Has it begun to sprout? Will it bloom this year?</line>
+            <line>‘Or has the sudden frost disturbed its bed?</line>
+            <line>‘Oh keep the Dog far hence, that’s friend to men,</line>
+            <line>‘Or with his nails he’ll dig it up again!</line>
+            <line>‘You! hypocrite lecteur!—mon semblable,—mon frère!”</line>
+        </stanza>
+    </section>
+    <section id="2">
+        <title>A Game of Chess</title>
+        <stanza>
+            <line>The Chair she sat in, like a burnished throne,</line>
+            <line>Glowed on the marble, where the glass</line>
+            <line>Held up by standards wrought with gold</line>
+            <line>From sitting on the stove, he could smell the hot</line>
+        </stanza>
+        <!-- Additional stanzas and lines here -->
+    </section>
+    <!-- Additional sections here -->
+</poem>
