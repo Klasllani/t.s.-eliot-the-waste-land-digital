@@ -8,5 +8,5 @@ Obvious work in progress. Plan is for:
 - XML/TEI representation of T.S. Eliot's The Waste Land
 - XSL transformation of the TEI?
 - Incorporate Apache Lucene Java library for retrieval queries // text analysis
-- Jupyter notebook for quality of life?
+- .ipynb for quality of life?
 - Expand project to include other works in the corpus (e.g. *Four Quartets*)
