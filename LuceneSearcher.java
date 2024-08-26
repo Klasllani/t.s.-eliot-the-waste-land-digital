@@ -13,12 +13,11 @@ import org.apache.lucene.analysis.standard.StandardAnalyzer;
 
 public class LuceneSearcher {
     public static void main(String[] args) {
-        try {
-            // Initialize Lucene components
-            Directory directory = new RAMDirectory(); // Use the same directory instance used in LuceneIndexer
-            DirectoryReader reader = DirectoryReader.open(directory);
+        try (Directory directory = new RAMDirectory();
+             DirectoryReader reader = DirectoryReader.open(directory);
+             StandardAnalyzer analyzer = new StandardAnalyzer()) {
+            
             IndexSearcher searcher = new IndexSearcher(reader);
-            StandardAnalyzer analyzer = new StandardAnalyzer();
             
             // Parse the query
             QueryParser parser = new QueryParser("content", analyzer);
@@ -30,9 +29,6 @@ public class LuceneSearcher {
                 Document doc = searcher.doc(scoreDoc.doc);
                 System.out.println("Found document with content: " + doc.get("content"));
             }
-            
-            // Close reader
-            reader.close();
         } catch (Exception e) {
             e.printStackTrace();
         }
