@@ -25,5 +25,3 @@ After indexing, run the `LuceneSearcher` class to search the indexed content:
 ```sh
 mvn exec:java -Dexec.mainClass="com.example.LuceneSearcher"
 ```
-
-By following these steps, you should be able to index and search the content of `The-Waste-Land.xml` using Apache Lucene
