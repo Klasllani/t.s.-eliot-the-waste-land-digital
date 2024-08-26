@@ -7,13 +7,9 @@ Its rich use of literary references and analysis of the human condition make is 
 
 ## Running the Project
 
-### Ensure Maven is Installed
 Make sure you have Maven installed on your system. You can download it from [Maven's official website](https://maven.apache.org/download.cgi).
 
-### Build the Project
-1. Open a terminal.
-2. Navigate to the directory containing your project files.
-3. Run the following command to build the project:
+Navigate to the directory containing your project files and run the following command:
    ```sh
    mvn clean install
    ```
