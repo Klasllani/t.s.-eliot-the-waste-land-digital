@@ -11,24 +11,20 @@ import org.apache.lucene.analysis.standard.StandardAnalyzer;
 
 public class LuceneIndexer {
     public static void main(String[] args) {
-        try {
-            // Initialize Lucene components
-            Directory directory = new RAMDirectory();
-            StandardAnalyzer analyzer = new StandardAnalyzer();
-            IndexWriterConfig config = new IndexWriterConfig(analyzer);
-            IndexWriter writer = new IndexWriter(directory, config);
+        try (Directory directory = new RAMDirectory();
+             StandardAnalyzer analyzer = new StandardAnalyzer();
+             IndexWriter writer = new IndexWriter(directory, new IndexWriterConfig(analyzer))) {
             
             // Parse the XML file
-            String content = XMLParser.parseXML("src/resources/The-Waste-Land.xml");
+            String content = XMLParser.parseXML("src/main/resources/The-Waste-Land.xml");
             
             // Create a Lucene document and add fields
             Document doc = new Document();
             doc.add(new TextField("content", content, Field.Store.YES));
             writer.addDocument(doc);
             
-            // Commit changes and close writer
+            // Commit changes
             writer.commit();
-            writer.close();
             
             System.out.println("Indexing completed.");
         } catch (Exception e) {
