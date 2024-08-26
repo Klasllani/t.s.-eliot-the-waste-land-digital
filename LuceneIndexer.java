@@ -16,7 +16,7 @@ public class LuceneIndexer {
              IndexWriter writer = new IndexWriter(directory, new IndexWriterConfig(analyzer))) {
             
             // Parse the XML file
-            String content = XMLParser.parseXML("src/main/resources/The-Waste-Land.xml");
+            String content = XMLParser.parseXML("The-Waste-Land.xml");
             
             // Create a Lucene document and add fields
             Document doc = new Document();
