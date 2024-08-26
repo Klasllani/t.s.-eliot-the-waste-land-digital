@@ -30,4 +30,4 @@ After indexing, run the `LuceneSearcher` class to search the indexed content:
 mvn exec:java -Dexec.mainClass="com.example.LuceneSearcher"
 ```
 
-By following these steps, you should be able to index and search the content of `The-Waste-Land.xml` using Apache Lucene, even if all your files are in the same directory.
+By following these steps, you should be able to index and search the content of `The-Waste-Land.xml` using Apache Lucene
