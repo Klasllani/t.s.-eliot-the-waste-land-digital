@@ -9,19 +9,26 @@ Its rich use of literary references and analysis of the human condition make is 
 
 Make sure you have Maven installed on your system. You can download it from [Maven's official website](https://maven.apache.org/download.cgi).
 
-**Navigate to the directory** containing your project files, and run the following command:
+**Navigate to the directory** containing your project files:
    ```sh
-   mvn clean install
+cd [project-directory]
+mvn clean install
+mvn dependency:copy-dependencies
    ```
 
-### Run LuceneIndexer
+### Run the XML Parser
+ ```sh
+java -cp target\classes;target\dependency\* XMLParser The-Waste-Land.xml
+   ```
+
+### Run the LuceneIndexer
 After the build is successful, run the `LuceneIndexer` class to index the XML content:
 ```sh
-mvn exec:java -Dexec.mainClass="com.example.LuceneIndexer"
+java -cp target\classes;target\dependency\* LuceneIndexer The-Waste-Land.xml
 ```
 
-### Run LuceneSearcher
+### Run the LuceneSearcher
 After indexing, run the `LuceneSearcher` class to search the indexed content:
 ```sh
-mvn exec:java -Dexec.mainClass="com.example.LuceneSearcher"
+java -cp target\classes;target\dependency\* LuceneSearcher "search term"
 ```
