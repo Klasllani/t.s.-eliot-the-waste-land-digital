@@ -4,10 +4,11 @@
 A landmark 20th-century poem, *The Waste Land* explores themes of disillusionment in the aftermath of World War I. 
 Its rich use of literary references and analysis of the human condition make is so important to perserve it for progeny.
 
+## Prerequisites
+- Java JDK (8 or newer)
+- [Maven](https://maven.apache.org/download.cgi)
 
 ## Running the Project
-
-Make sure you have Maven installed on your system. You can download it from [Maven's official website](https://maven.apache.org/download.cgi).
 
 **Navigate to the directory** containing your project files:
    ```sh
