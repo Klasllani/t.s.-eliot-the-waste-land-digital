@@ -40,7 +40,7 @@ For example, to search for "April" in the poem:
 java -cp ".;target\classes;target\dependency\*" LuceneSearcher "April"
 ```
 
-### Note for Linux/Mac Users
+#### *Note for Linux/Mac Users
 If using Linux or Mac, replace semicolons with colons in the classpath:
 ```sh
 java -cp ".:target/classes:target/dependency/*" LuceneSearcher "search term"
