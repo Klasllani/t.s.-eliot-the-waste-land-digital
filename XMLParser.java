@@ -1,42 +1,48 @@
-package com.example;
-
+import java.io.File;
+import java.nio.file.Files;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import org.w3c.dom.Document;
-import org.w3c.dom.NodeList;
-import org.w3c.dom.Node;
 import org.w3c.dom.Element;
-import java.io.File;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 
 public class XMLParser {
-    public static String parseXML(String filePath) {
-        StringBuilder content = new StringBuilder();
+    
+    public static String parseXML(String filename) {
+        StringBuilder textContent = new StringBuilder();
+        
         try {
-            File file = new File(filePath);
+            // Check if file exists
+            File xmlFile = new File(filename);
+            if (!xmlFile.exists()) {
+                System.err.println("File not found: " + filename);
+                return "";
+            }
+            
+            // Create DocumentBuilder
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = factory.newDocumentBuilder();
-            Document doc = builder.parse(file);
+            Document doc = builder.parse(xmlFile);
             doc.getDocumentElement().normalize();
             
-            // Extract text from all <l> tags within <lg> tags
-            NodeList lgNodeList = doc.getElementsByTagName("lg");
-            for (int i = 0; i < lgNodeList.getLength(); i++) {
-                Node lgNode = lgNodeList.item(i);
-                if (lgNode.getNodeType() == Node.ELEMENT_NODE) {
-                    Element lgElement = (Element) lgNode;
-                    NodeList lNodeList = lgElement.getElementsByTagName("l");
-                    for (int j = 0; j < lNodeList.getLength(); j++) {
-                        Node lNode = lNodeList.item(j);
-                        if (lNode.getNodeType() == Node.ELEMENT_NODE) {
-                            Element lElement = (Element) lNode;
-                            content.append(lElement.getTextContent()).append("\n");
-                        }
-                    }
+            // Extract text from all <l> elements (lines)
+            NodeList lineNodes = doc.getElementsByTagName("l");
+            for (int i = 0; i < lineNodes.getLength(); i++) {
+                Node node = lineNodes.item(i);
+                if (node.getNodeType() == Node.ELEMENT_NODE) {
+                    Element element = (Element) node;
+                    textContent.append(element.getTextContent()).append("\n");
                 }
             }
+            
+            System.out.println("Successfully parsed XML file: " + filename);
+            
         } catch (Exception e) {
+            System.err.println("Error parsing XML: " + e.getMessage());
             e.printStackTrace();
         }
-        return content.toString();
+        
+        return textContent.toString();
     }
 }
