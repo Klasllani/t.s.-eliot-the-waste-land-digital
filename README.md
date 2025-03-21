@@ -10,7 +10,7 @@ Its rich use of literary references and analysis of the human condition make is 
 
 ## Running the Project
 
-### Build the Project
+### 1. Build the Project
 **Navigate to the directory** containing your project files:
    ```sh
 cd [project-directory]
@@ -18,18 +18,18 @@ mvn clean install
 mvn dependency:copy-dependencies
    ```
 
-### Compile the Java Files
+### 2. Compile the Java Files
  ```sh
 javac -cp ".;target\dependency\*" LuceneIndexer.java LuceneSearcher.java XMLParser.java
    ```
 
-### Run the LuceneIndexer
+### 3. Run the LuceneIndexer
 After the build is successful, run the `LuceneIndexer` class to index the XML content:
 ```sh
 java -cp ".;target\classes;target\dependency\*" LuceneIndexer The-Waste-Land.xml
 ```
 
-### Run the LuceneSearcher
+### 4. Run the LuceneSearcher
 After indexing, run the `LuceneSearcher` class to search the indexed content:
 ```sh
 java -cp ".;target\classes;target\dependency\*" LuceneSearcher "search term"
@@ -40,7 +40,7 @@ For example, to search for "April" in the poem:
 java -cp ".;target\classes;target\dependency\*" LuceneSearcher "April"
 ```
 
-#### *Note for Linux/Mac Users
+#### *4.1. Note for Linux/Mac Users
 If using Linux or Mac, replace semicolons with colons in the classpath:
 ```sh
 java -cp ".:target/classes:target/dependency/*" LuceneSearcher "search term"
