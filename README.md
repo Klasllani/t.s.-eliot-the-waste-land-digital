@@ -8,6 +8,9 @@ Its rich use of literary references and analysis of the human condition make is 
 - Java JDK (8 or newer)
 - [Apache Maven](https://maven.apache.org/download.cgi)
 
+Apache Software Foundation is a non-profit organization that supports open-source software development. Apache Maven simplifies software build automation and deployment processes. Apache Lucene provides powerful full-text search capabilities for content indexing and retrieval.
+
+
 ## Running the Project
 
 ### 1. Build the Project
