@@ -6,7 +6,7 @@ Its rich use of literary references and analysis of the human condition make is 
 
 ## Prerequisites
 - Java JDK (8 or newer)
-- [Maven](https://maven.apache.org/download.cgi)
+- [Apache Maven](https://maven.apache.org/download.cgi)
 
 ## Running the Project
 
