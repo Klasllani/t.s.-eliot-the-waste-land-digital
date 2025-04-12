@@ -7,5 +7,3 @@ Its rich use of literary references and analysis of the human condition make is 
 ## Prerequisites
 - Java JDK (8 or newer)
 - [Apache Maven](https://maven.apache.org/download.cgi)
-
-Apache Software Foundation is a non-profit organization that supports open-source software development. 
