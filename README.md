@@ -5,5 +5,5 @@ A landmark 20th-century poem, *The Waste Land* explores themes of disillusionmen
 Its rich use of literary references and analysis of the human condition make is so important to perserve it for progeny.
 
 ## Prerequisites
-- Java JDK (8 or newer)
+- Java JDK (8+)
 - [Apache Maven](https://maven.apache.org/download.cgi)
